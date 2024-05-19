@@ -1,0 +1,115 @@
+html, body {
+    min-width: 320px; /* Ajusta este valor al mínimo que desees */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos para el h1 encima del contenedor */
+h1 {
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Posición relativa para el h1 */
+    z-index: 1; /* Colocar el h1 por encima del contenedor */
+    padding: 10px; /* Añadir un poco de espacio alrededor del texto */
+    margin-bottom: -50px; /* Mover el h1 hacia arriba para superponerlo ligeramente con el contenedor */
+    font-size: 50px; /* Tamaño de fuente más grande */
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.contenedor {
+    width: 50vh;
+    min-height: 50vh; /* Cambiado a min-height para asegurar que el contenedor tenga al menos esta altura */
+    background-color: rgba(235, 233, 233, 0.993);
+    display: flex;
+    flex-direction: column; /* Cambiado a column para colocar elementos uno encima del otro */
+    justify-content: center;
+    align-items: center;
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); /* Añade una sombra alrededor del borde */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola fila/columna */
+}
+
+.contenedor .login {
+    padding: 5%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contenedor .login img {
+    height: auto;
+    max-width: 80%; /* Ajustar el ancho máximo de la imagen para que no se desborde */
+}
+
+.contenedor .login h1 {
+    color: #000000;
+    font-size: 28px;
+    border-bottom: 1px solid #9e9e9e;
+    margin-bottom: 20px; /* Añadir margen inferior para separar el título del formulario */
+}
+
+.contenedor .login input[type="text"],
+.contenedor .login input[type="password"],
+.contenedor .login input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px; /* Añadir margen inferior entre elementos del formulario */
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 1px solid transparent; /* Agregar esta línea para quitar el borde negro */
+}
+
+.contenedor .login input[type="submit"] {
+    background-color: #0080ff;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.contenedor .login a {
+    text-decoration: none;
+    color: #050505;
+    text-align: center;
+}
+
+.contenedor .img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 80vw; /* Ajuste para que el contenedor ocupe el 80% del viewport */
+    }
+    .contenedor .login img {
+        width: 60%; /* Ajustar el ancho de la imagen en dispositivos móviles */
+    }
+}
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

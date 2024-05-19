@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gestionUsers.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <header>
+        <h1>Módulo Administrador</h1>
+        <button>Cerrar sesión</button>
+    </header>
+    <div style="text-align: center;">
+        <button id="btnRegresarConfiguracion" class="configuracion">Regresar a la configuracion</button>
+    </div>
+    <main>
+        <div class="container1">
+            <h2>Dar de alta usuarios</h2>
+            <!-- Formulario para dar de alta usuarios -->
+            <form>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Registrar usuario</button>
+            </form>
+        </div>
+        <div class="container2">
+            <h2>Cambiar contraseña</h2>
+            <!-- Formulario para cambiar contraseña -->
+            <form>
+                <label for="oldPassword">Contraseña actual:</label>
+                <input type="password" id="oldPassword" name="oldPassword">
+                <label for="newPassword">Nueva contraseña:</label>
+                <input type="password" id="newPassword" name="newPassword">
+                <label for="confirmPassword">Confirmar nueva contraseña:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <button type="submit">Cambiar contraseña</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>© 2020 - 2024</p>
+        </div>
+    </footer>
+    <script src="js/botonesAdmin.js"></script>
+</body>
+</html>

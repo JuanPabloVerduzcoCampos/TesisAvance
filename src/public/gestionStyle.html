@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gestionStyle.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <header>
+        <h1>Módulo Administrador</h1>
+        <button>Cerrar sesión</button>
+    </header>
+
+    <!-- Nuevo botón añadido y centrado horizontalmente -->
+    <div style="text-align: center;">
+        <button id="btnRegresarConfiguracion" class="configuracion">Regresar a la configuracion</button>
+    </div>
+
+    <main>
+        <div class="container1">
+            <h2>Actualizar logo</h2>
+            <!-- Drop box para imágenes -->
+            <div class="image-dropbox" id="imageDropbox">
+                <span class="dropbox-text">Arrastra y suelta una imagen aquí o haz clic para seleccionar</span>
+                <input type="file" id="logoFile" name="logoFile" accept="image/*" onchange="previewImage(event)">
+                <!-- Previsualización de la imagen seleccionada -->
+                <img id="imagePreview" src="#" alt="Previsualización de la imagen" style="display: none;">
+            </div>
+            <button type="submit">Actualizar logo</button>
+        </div>
+        
+        <div class="container2" id="container2">
+            <h2>Actualizar color de página</h2>
+            <!-- Formulario para actualizar el color de página -->
+            <form>
+                <label for="colorPicker">Seleccionar color de página:</label>
+                <input type="color" id="colorPicker" name="colorPicker">
+                <button type="submit">Actualizar color</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>© 2020 - 2024</p>
+        </div>
+    </footer>
+    <!-- Script para mostrar la previsualización de la imagen -->
+    <script src="js/botonesAdmin.js"></script>
+</body>
+</html>
